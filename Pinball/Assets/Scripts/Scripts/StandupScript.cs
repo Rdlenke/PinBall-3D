@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StandupScript : MonoBehaviour
+public class StandupScript : Questable 
 {
     Rigidbody rb;
 
@@ -35,8 +35,9 @@ public class StandupScript : MonoBehaviour
         IDLE
     }
 
-    void Start()
+    new void Start()
     {
+        base.Start();
         rb = GetComponent<Rigidbody>();        
         startPosition = transform.position;
     }
@@ -49,13 +50,13 @@ public class StandupScript : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    new void OnCollisionEnter(Collision collision)
     {
         if(CollidedWithSphere(collision.gameObject.tag))
         {
             hitCount++;
-            Debug.Log($"Hit Count == {hitCount}");
-            // TODO(Roger): game.score += COMPONENT_SCORE;
+
+            base.Progress();
             
             SetupRecoilMovement(collision);
         }

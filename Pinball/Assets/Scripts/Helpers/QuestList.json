@@ -1,0 +1,11 @@
+{
+    "quests": [
+        {
+            "name": "Bater na porta",
+            "score": 100,
+            "description": "Bata em qualquer um dos standups 10 vezes!",
+            "objective": 10,
+            "progress": 0
+        }
+    ]
+}

@@ -11,4 +11,8 @@ public static class Constants
     public const string PERSISTANT_SCENE_NAME = "Persistant";
 
     public const string LEFT_FLIPPER_INPUT = "LFlipper";
+
+    public const string HELPER_FOLDER = "Scripts/Helpers/";
+    public const string QUESTS_FILE = "QuestList.json";
+    public const string QUEST_SYSTEM_TAG = "Quest System";
 }
