@@ -14,10 +14,10 @@ public class ScoopScript : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if(CollisionHelper.DidCollideWithSphere(other.gameObject.tag))
-        {
-            other.gameObject.GetComponent<Renderer>().enabled = false;
-            game.LoadBonusLevel(other.gameObject, other.relativeVelocity);
-        }
+        //if(CollisionHelper.DidCollideWithSphere(other.gameObject.tag))
+        //{
+        //    other.gameObject.GetComponent<Renderer>().enabled = false;
+        //    game.LoadBonusLevel(other.gameObject, other.relativeVelocity);
+        //}
     }
 }
